@@ -2,7 +2,7 @@
 //  FooterTableViewCell.swift
 //  SocialApp
 //
-//  Created by test on 17.06.2022.
+//  Created by Антон Чечевичкин on 17.06.2022.
 //
 
 import UIKit
@@ -32,7 +32,7 @@ class FooterTableViewCell: UITableViewCell {
         
         likesCount.frame = CGRect(x: likesIcon.frame.width + 12, y: 4, width: 32, height: 24)
         
-        likesView.backgroundColor = UIColor(red: CGFloat(137.0/255.0), green: CGFloat(207.0/255.0), blue: CGFloat(240.0/255.0), alpha: 1)
+        likesView.backgroundColor = UIColor.vkMainColor
         likesView.layer.cornerRadius = 16
         likesView.layer.masksToBounds = true
         
@@ -48,7 +48,7 @@ class FooterTableViewCell: UITableViewCell {
         
         commentsCount.frame = CGRect(x: commentsIcon.frame.width + 12, y: 4, width: 32, height: 24)
         commentsCount.text = ""
-        commentsView.backgroundColor = UIColor(red: CGFloat(137.0/255.0), green: CGFloat(207.0/255.0), blue: CGFloat(240.0/255.0), alpha: 1)
+        commentsView.backgroundColor = UIColor.vkMainColor
         commentsView.layer.cornerRadius = 16
         commentsView.layer.masksToBounds = true
         

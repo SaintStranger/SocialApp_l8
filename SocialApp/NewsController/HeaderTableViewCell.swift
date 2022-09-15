@@ -2,7 +2,7 @@
 //  HeaderTableViewCell.swift
 //  SocialApp
 //
-//  Created by test on 17.06.2022.
+//  Created by Антон Чечевичкин on 17.06.2022.
 //
 
 import UIKit
@@ -42,14 +42,14 @@ class HeaderTableViewCell: UITableViewCell {
         
         authorName.frame = CGRect(x: 24 + avatar.frame.width, y: 8, width: frame.width - avatar.frame.width, height: 24)
         authorName.text = ""
-        authorName.font = UIFont.boldSystemFont(ofSize: 18)
+        authorName.font = UIFont.mainHeaderFont
         authorName.backgroundColor = .white //Везде проставил бэкграунд
         contentView.addSubview(authorName)
         
         
         date.frame = CGRect(x: 24 + avatar.frame.width, y: authorName.frame.height + 12, width: frame.width - avatar.frame.width, height: 24)
         date.text = ""
-        date.font = UIFont.systemFont(ofSize: 16)
+        date.font = UIFont.supplementaryHeaderFont
         date.textColor = .gray
         date.backgroundColor = .white //Везде проставил бэкграунд
         contentView.addSubview(date)
@@ -108,7 +108,7 @@ extension HeaderTableViewCell {
     func getAuthorNameSize(text: String) -> CGSize {
 
         let maxWidth = bounds.width - insets
-        let font = UIFont.boldSystemFont(ofSize: 18)
+        let font = UIFont.mainHeaderFont
 
         let textBlock = CGSize(width: maxWidth, height: CGFloat.greatestFiniteMagnitude)
         

@@ -2,7 +2,7 @@
 //  NewsImageTableViewCell.swift
 //  SocialApp
 //
-//  Created by test on 31.05.2022.
+//  Created by Антон Чечевичкин on 31.05.2022.
 //
 
 import UIKit

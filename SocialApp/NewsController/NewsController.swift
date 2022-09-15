@@ -2,7 +2,7 @@
 //  News4ViewController.swift
 //  SocialApp
 //
-//  Created by test on 31.05.2022.
+//  Created by Антон Чечевичкин on 31.05.2022.
 //
 
 import UIKit
@@ -186,7 +186,7 @@ extension NewsController: UITableViewDelegate, UITableViewDataSource, UITableVie
         
         tableView.refreshControl?.attributedTitle = NSAttributedString(string: "Обновление...")
         
-        tableView.refreshControl?.tintColor = UIColor(red: CGFloat(137.0/255.0), green: CGFloat(207.0/255.0), blue: CGFloat(240.0/255.0), alpha: 1)
+        tableView.refreshControl?.tintColor = UIColor.vkMainColor
         
         tableView.refreshControl?.addTarget(self, action: #selector(refreshNews), for: .valueChanged)
         
@@ -243,14 +243,9 @@ extension NewsController: UITableViewDelegate, UITableViewDataSource, UITableVie
 
     @objc func RedrawCell() {
         tableView.beginUpdates()
-
         tableView.reloadRows(at: [IndexPath.init(row: 2, section: 0)], with: .automatic)
-
         tableView.endUpdates()
     }
-    
-    
-    
 }
 
 
