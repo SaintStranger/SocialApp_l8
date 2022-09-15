@@ -2,7 +2,7 @@
 //  News4TableViewCell.swift
 //  SocialApp
 //
-//  Created by test on 31.05.2022.
+//  Created by Антон Чечевичкин on 31.05.2022.
 //
 
 import UIKit
@@ -133,7 +133,7 @@ extension UILabel {
         
         let height = text.boundingRect(with: size, options: .usesLineFragmentOrigin, context: nil).height
         
-        let font = UIFont.systemFont(ofSize: 18)
+        let font = UIFont.mainCellFont
         
         let lineHeight = font.lineHeight
         
